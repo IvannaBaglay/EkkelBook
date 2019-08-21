@@ -17,15 +17,20 @@ void f(int i) throw (Up, Fit) {
     g();
 }
 
-void g() {} //V1
-/*void  g() { //V2
-    throw 47;
+//void g() {} //V1
+void  g() { //V2
+    throw Up();
+}
+/*void  g() { //V3
+    throw 47; //ERROR
 }*/
 
 void MyUnexpected() {
     cout << "unexpected exception throw" << endl;
     exit(0);
 }
+
+
 
 int Unexpected() {
     set_unexpected(MyUnexpected);
@@ -43,3 +48,4 @@ int Unexpected() {
     cout<<"END"<<endl;
     return 0;
 }
+

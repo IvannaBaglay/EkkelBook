@@ -14,5 +14,5 @@ int TestBaseClass();
 int InitExept();
 int StdExept();
 int Unexpected();
-
+int BadException();
 #endif // _ALL_FUNCTION_
