@@ -1,0 +1,21 @@
+﻿  base_except.cpp
+D:\Project\ProjectVS\TestTryCatch\TestTryCatch\base_except.cpp(51,5): warning C4286:  'X::Small &': is caught by base class ('X::Trouble &') on line 48
+  clean_up.cpp
+  Except1.cpp
+  main.cpp
+  rawp.cpp
+  std_except.cpp
+  termanator.cpp
+D:\Project\ProjectVS\TestTryCatch\TestTryCatch\base_except.cpp(54,5): warning C4286:  'X::Big': is caught by base class ('X::Trouble &') on line 48
+D:\Project\ProjectVS\TestTryCatch\TestTryCatch\termanator.cpp(27,1): warning C4297:  'Botch::~Botch': function assumed not to throw an exception but does
+  test_base_class.cpp
+D:\Project\ProjectVS\TestTryCatch\TestTryCatch\termanator.cpp(27,1): message :  destructor or deallocator has a (possibly implicit) non-throwing exception specification
+D:\Project\ProjectVS\TestTryCatch\TestTryCatch\test_base_class.cpp(61,30): warning C4584:  'DerivedClass3': base-class 'DerivedClass1' is already a base-class of 'DerivedClass2'
+D:\Project\ProjectVS\TestTryCatch\TestTryCatch\test_base_class.cpp(36): message :  see declaration of 'DerivedClass1'
+  wrapped.cpp
+D:\Project\ProjectVS\TestTryCatch\TestTryCatch\test_base_class.cpp(49): message :  see declaration of 'DerivedClass2'
+D:\Project\ProjectVS\TestTryCatch\TestTryCatch\wrapped.cpp(16,1): warning C4290:  C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  init_exept.cpp
+  Generating Code...
+D:\Project\ProjectVS\TestTryCatch\TestTryCatch\wrapped.cpp(23): message :  see reference to class template instantiation 'PWrap<T,sz>' being compiled
+  TestTryCatch.vcxproj -> D:\Project\ProjectVS\TestTryCatch\Debug\TestTryCatch.exe
