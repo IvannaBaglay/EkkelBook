@@ -18,6 +18,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C01\all_function.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C01\base_except.cpp" />
+    <ClCompile Include="C01\clean_up.cpp" />
+    <ClCompile Include="C01\Except1.cpp" />
+    <ClCompile Include="C01\init_exept.cpp" />
+    <ClCompile Include="C01\main.cpp" />
+    <ClCompile Include="C01\rawp.cpp" />
+    <ClCompile Include="C01\std_except.cpp" />
+    <ClCompile Include="C01\termanator.cpp" />
+    <ClCompile Include="C01\test_base_class.cpp" />
+    <ClCompile Include="C01\unexpted.cpp" />
+    <ClCompile Include="C01\wrapped.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{6693BD41-FC37-48F6-A2B1-2E6931D19B86}</ProjectGuid>
@@ -122,21 +138,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="base_except.cpp" />
-    <ClCompile Include="clean_up.cpp" />
-    <ClCompile Include="Except1.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="rawp.cpp" />
-    <ClCompile Include="std_except.cpp" />
-    <ClCompile Include="termanator.cpp" />
-    <ClCompile Include="test_base_class.cpp" />
-    <ClCompile Include="wrapped.cpp" />
-    <ClCompile Include="init_exept.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="all_function.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

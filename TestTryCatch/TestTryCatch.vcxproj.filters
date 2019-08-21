@@ -13,45 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\C01">
-      <UniqueIdentifier>{aa3ef6a0-d59b-4760-b423-d208f6b238c1}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClInclude Include="C01\all_function.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C01\base_except.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Except1.cpp">
-      <Filter>Source Files\C01</Filter>
+    <ClCompile Include="C01\clean_up.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="base_except.cpp">
-      <Filter>Source Files\C01</Filter>
+    <ClCompile Include="C01\Except1.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="termanator.cpp">
-      <Filter>Source Files\C01</Filter>
+    <ClCompile Include="C01\init_exept.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="clean_up.cpp">
-      <Filter>Source Files\C01</Filter>
+    <ClCompile Include="C01\main.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="rawp.cpp">
-      <Filter>Source Files\C01</Filter>
+    <ClCompile Include="C01\rawp.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="wrapped.cpp">
-      <Filter>Source Files\C01</Filter>
+    <ClCompile Include="C01\std_except.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test_base_class.cpp">
-      <Filter>Source Files\C01</Filter>
+    <ClCompile Include="C01\termanator.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="init_exept.cpp">
-      <Filter>Source Files\C01</Filter>
+    <ClCompile Include="C01\test_base_class.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="std_except.cpp">
-      <Filter>Source Files\C01</Filter>
+    <ClCompile Include="C01\unexpted.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="all_function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="C01\wrapped.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
