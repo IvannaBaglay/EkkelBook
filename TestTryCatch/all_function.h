@@ -13,5 +13,6 @@ int Wrapped();
 int TestBaseClass();
 int InitExept();
 int StdExept();
+int Unexpected();
 
 #endif // _ALL_FUNCTION_
