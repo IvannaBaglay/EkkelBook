@@ -5,9 +5,13 @@ public:
     class BaseInitExeptExept {};
     BaseInitExept(int i){
         i_ = i;
-        //throw BaseInitExeptExept();
+        cout << "BaseInitExept" << endl;
+        throw BaseInitExeptExept();
     }
     BaseInitExept();
+    ~BaseInitExept() {
+        cout << "~BaseInitExept" << endl;
+    }
 private:
     int i_;
 };

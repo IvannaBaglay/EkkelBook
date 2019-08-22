@@ -28,10 +28,13 @@ public :
 
 class UseResources {
 public:
-    UseResources(int count = 1) {
+    UseResources(int count = 1) try {
         cout << "UseResources()" << endl;
         cat = new Cat[count];
         dog = new Dog;
+    }catch(int&)
+    {
+        cout << "inside handler class" << endl;
     }
     ~UseResources() {
         cout << "~UseResources()" << endl;
