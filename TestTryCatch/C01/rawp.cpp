@@ -19,6 +19,7 @@ public :
     void* operator new(size_t sz) {
         cout << "allocating a Dog" << endl;
         throw 47;
+        return nullptr;
     }
     void operator delete(void* p) {
         cout << "deallocating a Dog" << endl;
@@ -30,8 +31,8 @@ class UseResources {
 public:
     UseResources(int count = 1) try {
         cout << "UseResources()" << endl;
-        cat = new Cat[count];
-        dog = new Dog;
+        cat = new Cat[count]; // don't delete
+        dog = new Dog; // don't delete
     }catch(int&)
     {
         cout << "inside handler class" << endl;
@@ -42,6 +43,8 @@ public:
         delete dog;
     }
 private:
+    Cat cat1[4]; // will be delete
+    //Dog dog1;
     Cat* cat;
     Dog* dog;
 
