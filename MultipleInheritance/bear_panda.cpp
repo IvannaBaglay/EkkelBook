@@ -16,6 +16,9 @@ namespace NamespacePanda {
         const std::string get_name() const {
             return name_;
         }
+        virtual void print() {
+            std::cout << "ZooAnimal.print()" << std::endl;
+        }
     private:
         std::string name_;
 
@@ -31,6 +34,12 @@ namespace NamespacePanda {
         }
         ~Endangered() {
             std::cout << "~Endangered" << std::endl;
+        }
+        virtual void print() {
+            std::cout << "Endangered.print()" << std::endl;
+        }
+        virtual void highlight(){
+            std::cout << "Endangered.highlight()" << std::endl;
         }
     private:
         std::string name_;
@@ -50,6 +59,12 @@ namespace NamespacePanda {
         ~Bear() {
             std::cout << "~Bear" << std::endl;
         }
+        void print() {
+            std::cout << "Bear.print()" << std::endl;
+        }
+        virtual void toes() {
+            std::cout << "Bear.toes()" << std::endl;
+        }
     private:
         std::string name_;
     };
@@ -68,6 +83,18 @@ namespace NamespacePanda {
         }
         ~Panda() {
             std::cout << "~Panda" << std::endl;
+        }
+        void print() {
+            std::cout << "Panda.print()" << std::endl;
+        }
+        virtual void highlight() {
+            std::cout << "Panda.highlight()" << std::endl;
+        }
+        virtual void toes() {
+            std::cout << "Panda.toes()" << std::endl;
+        }
+        virtual void cuddle() {
+            std::cout << "Panda.cuddle()" << std::endl;
         }
     private:
         std::string name_;
@@ -89,6 +116,35 @@ namespace NamespacePanda {
 void CreatePanda() {
     NamespacePanda::Panda panda;
     NamespacePanda::Panda panda_with_name("name");
+
+    NamespacePanda::ZooAnimal zoo_animal;
+    NamespacePanda::Endangered endangered;
+    NamespacePanda::Bear bear;
+
+    std::cout << " \n\n\tprint()\n";
+
+    bear.print();
+    endangered.print();
+    zoo_animal.print();
+
+    std::cout << "\n\n\tfunction()\n";
+    
+    NamespacePanda::Bear* pb = new NamespacePanda::Panda;
+
+    pb->print();
+    pb->toes();
+    //pb->cuddle(); // error: class Bear has njo member cuddle()
+    //pb->highlight(); // error: class Bear has njo member highlight()
+
+    delete pb;
+
+    NamespacePanda::Endangered *pe = new NamespacePanda::Panda;
+    pe->print();
+    pe->highlight();
+    //pe->toes(); // error: class Endangered has njo member toes()
+    //pe->cuddle(); // error: class Endangered has njo member cuddle()
+
+    delete pe;
 
     //NamespacePanda::print(panda_with_name); //error: more than one instance of overloaded function "NamespacePanda::print" matches the argument list : MultipleInheritance	
 }
