@@ -61,7 +61,7 @@ public:
 private:
     PWrap<Cat, 3> cats;
     PWrap<Dog> dog;
-
+    Cat cat1[5];
 };
 
 class UseResources1:public UseResourcesBase1 {

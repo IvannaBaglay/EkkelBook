@@ -18,7 +18,7 @@ class Dog {
 public :
     void* operator new(size_t sz) {
         cout << "allocating a Dog" << endl;
-        throw 47;
+        //throw 47;
         return nullptr;
     }
     void operator delete(void* p) {

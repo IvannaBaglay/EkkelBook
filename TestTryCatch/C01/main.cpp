@@ -4,7 +4,7 @@
 
 int main()
 {
-    rawp();
+    manip();
     /*assert(2 + 2 == 4);
     std::cout << "Execution continues past the first assert\n";
     assert(2 + 2 == 5);
