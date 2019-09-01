@@ -26,3 +26,4 @@ TestTryCatch/x64/Debug/TestTryCatch.tlog/CL.command.1.tlog
 TestTryCatch/x64/Debug/TestTryCatch.log
 TestTryCatch/x64/Debug/Except1.obj
 .vs/TestTryCatch/v16/ipch/AutoPCH/e975e066e849d834/MAIN.ipch
+.vs/*
