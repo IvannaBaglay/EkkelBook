@@ -26,8 +26,11 @@ TestTryCatch/x64/Debug/TestTryCatch.tlog/CL.command.1.tlog
 TestTryCatch/x64/Debug/TestTryCatch.log
 TestTryCatch/x64/Debug/Except1.obj
 .vs/TestTryCatch/v16/ipch/AutoPCH/e975e066e849d834/MAIN.ipch
+<<<<<<< HEAD
 .vs/TestTryCatch/v16/ipch/AutoPCH/d6d5e7431d952c9a/BASE_STRUCT.ipch
 .vs/TestTryCatch/v16/Solution.VC.db-wal
 .vs/TestTryCatch/v16/Solution.VC.db-shm
 .vs/TestTryCatch/v16/Solution.VC.db
+=======
+>>>>>>> VirtualInheritance
 .vs/*
