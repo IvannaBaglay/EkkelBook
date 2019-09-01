@@ -1,3 +1,5 @@
+#include <vector>
+
 #include "all_function.h"
 
 namespace NamespacePanda {
@@ -16,7 +18,7 @@ namespace NamespacePanda {
         const std::string get_name() const {
             return name_;
         }
-        virtual void print() {
+        void print() {
             std::cout << "ZooAnimal.print()" << std::endl;
         }
         void get_max_weight() {
@@ -25,7 +27,9 @@ namespace NamespacePanda {
         void max_weight_with_paramets(double d, int i) {
             std::cout << "ZooAnimal.max_weight_with_paramets()" << std::endl;
         }
-        
+        virtual void f3(int i) {
+            std::cout << "ZooAnimal.f3()" << std::endl;
+        }
 
     private:
         void max_weight_with_paramets_in_private(double d, int i) {
@@ -46,7 +50,7 @@ namespace NamespacePanda {
         ~Endangered() {
             std::cout << "~Endangered" << std::endl;
         }
-        virtual void print() {
+        void print() {
             std::cout << "Endangered.print()" << std::endl;
         }
         virtual void highlight(){
@@ -105,9 +109,9 @@ namespace NamespacePanda {
         ~Panda() {
             std::cout << "~Panda" << std::endl;
         }
-        /*void print() {
+        void print() {
             std::cout << "Panda.print()" << std::endl;
-        }*/
+        }
         virtual void highlight() {
             std::cout << "Panda.highlight()" << std::endl;
         }
@@ -126,6 +130,10 @@ namespace NamespacePanda {
         void max_weight_with_paramets_in_private(double d, int i) {
             std::cout << "Panda.max_weight_with_paramets_in_private()" << std::endl;
         }*/
+        virtual void f3(std::string i) //override be error 
+        {
+            std::cout << "Panda.f3()" << std::endl;
+        }
     private:
         std::string name_;
     };
@@ -141,7 +149,67 @@ namespace NamespacePanda {
     }
 }
 
+namespace MIClass {
+    struct Base1 {
+        void print(int) const
+        {
+            std::cout << "Base1::print(int)\n";
+        }
+    protected:
+        int ival;
+        double dval;
+        char cval;
+    private:
+        int* id;
+    };
 
+    struct Base2 {
+        void print(double) const
+        {
+            std::cout << "Base2::print(double)\n";
+        }
+    protected:
+        double fval;
+    private:
+        double dval;
+    };
+
+    struct Derived : public Base1 {
+        void print(std::string) const
+        {
+            std::cout << "Derived::print(std::string)\n";
+        }
+    protected:
+        std::string sval;
+        double dval;
+    };
+
+    struct MI : public Derived, public Base2 {
+        void print(std::vector<double>) const
+        {
+            std::cout << "MI::print(vector<double>)\n";
+        }
+        void print(int) const
+        {
+            std::cout << "MI::print(int)\n";
+        }
+        void foo(double cval)
+        {
+            // local dval, MI::print, MI::ival, MI::dvec, Derived::sval, Base2::fval
+            fval, cval, dvec, ival, sval; 
+            //dval; // is ambiguous
+            int dval;
+            dval;
+
+            // exercise questions occur here
+        }
+    protected:
+        //int dval;
+        int *ival;
+        std::vector<double> dvec;
+    };
+
+}
 
 void CreatePanda() {
     NamespacePanda::Panda panda;
@@ -159,7 +227,7 @@ void CreatePanda() {
 
     std::cout << "\n\n\tfunction()\n";
     
-      NamespacePanda::Bear* pb = new NamespacePanda::Panda;
+    NamespacePanda::Bear* pb = new NamespacePanda::Panda;
 
     pb->print();
     pb->toes();
@@ -191,4 +259,15 @@ void CreatePanda() {
     panda.Endangered::max_weight_with_paramets_in_private(1,2);
     //panda.ZooAnimal::max_weight_with_paramets_in_private(1, 2); // error: is inaccessible
     //NamespacePanda::print(panda_with_name); //error: more than one instance of overloaded function "NamespacePanda::print" matches the argument list : MultipleInheritance	
+
+    
+    //panda.f3(2.0) // right if Panda don't have own member f3
+    //panda.f3("a"); // right if Panda have own member f3, but we can't use f3 from ZooAnimal
+
+    NamespacePanda::ZooAnimal* pz = new NamespacePanda::Panda;
+
+    //pz->f3("s"); //error ZooAnimal don't have f3(string) 
+
+    MIClass::MI mi;
+    mi.print(42);
 }
