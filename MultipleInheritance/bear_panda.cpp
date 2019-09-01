@@ -19,7 +19,18 @@ namespace NamespacePanda {
         virtual void print() {
             std::cout << "ZooAnimal.print()" << std::endl;
         }
+        void get_max_weight() {
+            std::cout << "ZooAnimal.max_weight()"<<std::endl;
+        }
+        void max_weight_with_paramets(double d, int i) {
+            std::cout << "ZooAnimal.max_weight_with_paramets()" << std::endl;
+        }
+        
+
     private:
+        void max_weight_with_paramets_in_private(double d, int i) {
+            std::cout << "ZooAnimal.max_weight_with_paramets_in_private()" << std::endl;
+        }
         std::string name_;
 
     };
@@ -41,7 +52,17 @@ namespace NamespacePanda {
         virtual void highlight(){
             std::cout << "Endangered.highlight()" << std::endl;
         }
+        void get_max_weight() {
+            std::cout << "Endangered.max_weight()" << std::endl;
+        }
+        void max_weight_with_paramets(std::string i) {
+            std::cout << "Endangered.max_weight_with_paramets()" << std::endl;
+        }
+        void max_weight_with_paramets_in_private(double d, int i) {
+            std::cout << "Endangered.max_weight_with_paramets_in_private()" << std::endl;
+        }
     private:
+        
         std::string name_;
     };
 
@@ -84,18 +105,27 @@ namespace NamespacePanda {
         ~Panda() {
             std::cout << "~Panda" << std::endl;
         }
-        void print() {
+        /*void print() {
             std::cout << "Panda.print()" << std::endl;
-        }
+        }*/
         virtual void highlight() {
             std::cout << "Panda.highlight()" << std::endl;
         }
-        virtual void toes() {
+        void toes() override {
             std::cout << "Panda.toes()" << std::endl;
         }
         virtual void cuddle() {
             std::cout << "Panda.cuddle()" << std::endl;
         }
+       /* void get_max_weight() {
+            std::cout << "Panda.max_weight()" << std::endl;
+        }
+        void max_weight_with_paramets(std::string i) {
+            std::cout << "Panda.max_weight_with_paramets()" << std::endl;
+        }
+        void max_weight_with_paramets_in_private(double d, int i) {
+            std::cout << "Panda.max_weight_with_paramets_in_private()" << std::endl;
+        }*/
     private:
         std::string name_;
     };
@@ -129,7 +159,7 @@ void CreatePanda() {
 
     std::cout << "\n\n\tfunction()\n";
     
-    NamespacePanda::Bear* pb = new NamespacePanda::Panda;
+      NamespacePanda::Bear* pb = new NamespacePanda::Panda;
 
     pb->print();
     pb->toes();
@@ -138,13 +168,27 @@ void CreatePanda() {
 
     delete pb;
 
-    NamespacePanda::Endangered *pe = new NamespacePanda::Panda;
-    pe->print();
-    pe->highlight();
+    NamespacePanda::Endangered *pen = new NamespacePanda::Panda;
+    pen->print();
+    pen->highlight();
     //pe->toes(); // error: class Endangered has njo member toes()
     //pe->cuddle(); // error: class Endangered has njo member cuddle()
 
-    delete pe;
+    //delete pen; // TODO:
 
+
+    //panda.get_max_weight(); // error: get_max_weight is ambiguous
+    panda.ZooAnimal::get_max_weight();
+    panda.Endangered::get_max_weight();
+
+    //panda.max_weight_with_paramets("a");// error: max_weight_with_paramets is ambiguous
+    //panda.max_weight_with_paramets(1,2);// error: max_weight_with_paramets is ambiguous
+    panda.ZooAnimal::max_weight_with_paramets(1, 2);
+    panda.Endangered::max_weight_with_paramets("a");
+    panda.Bear::max_weight_with_paramets(1.2, 1);
+    
+    //panda.max_weight_with_paramets_in_private(1, 1); //error: max_weight_with_paramets_in_private is ambiguous
+    panda.Endangered::max_weight_with_paramets_in_private(1,2);
+    //panda.ZooAnimal::max_weight_with_paramets_in_private(1, 2); // error: is inaccessible
     //NamespacePanda::print(panda_with_name); //error: more than one instance of overloaded function "NamespacePanda::print" matches the argument list : MultipleInheritance	
 }
