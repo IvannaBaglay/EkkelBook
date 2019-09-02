@@ -1,9 +1,7 @@
-.vs/*
-x64/*
-TestTryCatch/*
-!TestTryCatch/*.cpp
-!TestTryCatch/*.h
+# Whitelist some files
+!.gitignore
+!README.md
 
-MultipleInheritance/*
-!MultipleInheritance/*.cpp
-!MultipleInheritance/*.h
+*/
+!*/*.cpp
+!*/*.h
