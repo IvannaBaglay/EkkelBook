@@ -63,8 +63,4 @@ namespace MIClass {
         int* ival;
         std::vector<double> dvec;
     };
-
-
-
-
 }

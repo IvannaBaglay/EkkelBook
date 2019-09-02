@@ -128,7 +128,6 @@
     <ClCompile Include="class_panda.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="class_MI.cpp" />
-    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all_function.h" />
