@@ -66,5 +66,6 @@ void CreatePanda() {
     MIClass::MI mi;
     mi.print(42);
 
+    panda.FunctionInZoo();
 
 }
