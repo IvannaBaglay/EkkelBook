@@ -2,6 +2,6 @@
 !.gitignore
 !README.md
 
-*/
-!*/*.cpp
+!MultipleInheritance/*.cpp
 !*/*.h
+*/
