@@ -125,7 +125,9 @@
   <ItemGroup>
     <ClCompile Include="base_struct.cpp" />
     <ClCompile Include="bear_panda.cpp" />
+    <ClCompile Include="class_panda.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="class_MI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all_function.h" />
