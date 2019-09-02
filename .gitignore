@@ -1,8 +1,0 @@
-# Whitelist some files
-!.gitignore
-!README.md
-
-*/*
-
-!*/*.cpp
-!*/*.h
