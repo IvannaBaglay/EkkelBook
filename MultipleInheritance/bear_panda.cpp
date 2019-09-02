@@ -66,7 +66,5 @@ void CreatePanda() {
     MIClass::MI mi;
     mi.print(42);
 
-    NamespacePanda::Rummage(panda);
-    NamespacePanda::Dance(panda);
-    NamespacePanda::Out(panda);
+
 }

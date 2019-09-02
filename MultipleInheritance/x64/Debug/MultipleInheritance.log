@@ -1,12 +1,2 @@
 ﻿  bear_panda.cpp
-  class_panda.cpp
-  class_MI.cpp
-  Generating Code...
-  LINK : D:\Project\ProjectVS\EkkelBook\x64\Debug\MultipleInheritance.exe not found or not built by the last incremental link; performing full link
-class_panda.obj : error LNK2005: "void __cdecl NamespacePanda::print(class NamespacePanda::Bear const &)" (?print@NamespacePanda@@YAXAEBVBear@1@@Z) already defined in bear_panda.obj
-class_panda.obj : error LNK2005: "void __cdecl NamespacePanda::print(class NamespacePanda::Endangered const &)" (?print@NamespacePanda@@YAXAEBVEndangered@1@@Z) already defined in bear_panda.obj
-class_panda.obj : error LNK2005: "void __cdecl NamespacePanda::print(class NamespacePanda::ZooAnimal const &)" (?print@NamespacePanda@@YAXAEBVZooAnimal@1@@Z) already defined in bear_panda.obj
-bear_panda.obj : error LNK2019: unresolved external symbol "void __cdecl NamespacePanda::Dance(class NamespacePanda::Bear const &)" (?Dance@NamespacePanda@@YAXAEBVBear@1@@Z) referenced in function "void __cdecl CreatePanda(void)" (?CreatePanda@@YAXXZ)
-bear_panda.obj : error LNK2019: unresolved external symbol "void __cdecl NamespacePanda::Rummage(class NamespacePanda::Raccoon const &)" (?Rummage@NamespacePanda@@YAXAEBVRaccoon@1@@Z) referenced in function "void __cdecl CreatePanda(void)" (?CreatePanda@@YAXXZ)
-bear_panda.obj : error LNK2019: unresolved external symbol "void __cdecl NamespacePanda::Out(class NamespacePanda::ZooAnimal const &)" (?Out@NamespacePanda@@YAXAEBVZooAnimal@1@@Z) referenced in function "void __cdecl CreatePanda(void)" (?CreatePanda@@YAXXZ)
-D:\Project\ProjectVS\EkkelBook\x64\Debug\MultipleInheritance.exe : fatal error LNK1120: 3 unresolved externals
+  MultipleInheritance.vcxproj -> D:\Project\ProjectVS\EkkelBook\x64\Debug\MultipleInheritance.exe

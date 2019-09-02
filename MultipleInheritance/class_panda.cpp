@@ -162,19 +162,5 @@ namespace NamespacePanda {
         std::string name_;
     };
 
-    void print(const Bear&) {
 
-    }
-    void print(const Endangered&) {
-
-    }
-    void print(const ZooAnimal& zoo_animal) {
-        std::cout << zoo_animal.get_name() << std::endl;
-    }
-
-    void Dance(const Bear&);
-    
-    void Rummage(const Raccoon&);
-
-    void Out(const ZooAnimal&);
 }
