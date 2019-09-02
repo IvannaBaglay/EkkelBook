@@ -15,5 +15,5 @@ int InitExept();
 int StdExept();
 int Unexpected();
 int BadException();
-void manip();
+
 #endif // _ALL_FUNCTION_
