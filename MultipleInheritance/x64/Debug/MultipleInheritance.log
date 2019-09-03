@@ -1,4 +1,6 @@
-﻿  bear_panda.cpp
-  class_panda.cpp
-  Generating Code...
+﻿  lippman_task_18_29.cpp
+D:\Project\ProjectVS\EkkelBook\MultipleInheritance\lippman_task_18_29.cpp(50,26): warning C4584:  'NamespaceClassTask::Final': base-class 'NamespaceClassTask::Class' is already a base-class of 'NamespaceClassTask::MI'
+D:\Project\ProjectVS\EkkelBook\MultipleInheritance\lippman_task_18_29.cpp(5): message :  see declaration of 'NamespaceClassTask::Class'
+D:\Project\ProjectVS\EkkelBook\MultipleInheritance\lippman_task_18_29.cpp(41): message :  see declaration of 'NamespaceClassTask::MI'
+D:\Project\ProjectVS\EkkelBook\MultipleInheritance\lippman_task_18_29.cpp(66,11): warning C4101:  'pb': unreferenced local variable
   MultipleInheritance.vcxproj -> D:\Project\ProjectVS\EkkelBook\x64\Debug\MultipleInheritance.exe
