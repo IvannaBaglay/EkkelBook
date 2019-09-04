@@ -10,6 +10,9 @@ namespace NamespaceClassTask {
         ~Class() {
             std::cout << "~Class"<<std::endl;
         }
+        void f() {
+
+        }
     };
     class Base : public Class { 
     public:
@@ -27,6 +30,9 @@ namespace NamespaceClassTask {
         }
         ~D1() {
             std::cout << "~D1" << std::endl;
+        }
+        void f() {
+
         }
     };
     class D2 : virtual public Base { 
@@ -46,8 +52,11 @@ namespace NamespaceClassTask {
         ~MI() {
             std::cout << "~MI" << std::endl;
         }
+        void f() {
+
+        }
     };
-    class Final : public MI, public Class {
+    class Final : public MI,  public Class {
     public:
         Final() {
             std::cout << "Final" << std::endl;
@@ -71,6 +80,7 @@ void CallClass() {
 
     //pb = new Class;
     pc = new Final;
+    
     //pmi = pb;
     pd2 = pmi;
 }
