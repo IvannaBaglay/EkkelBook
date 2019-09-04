@@ -7,5 +7,6 @@
 
 void CreatePanda();
 void CreateD();
+void CallClass();
 
 #endif // MULTIPLE_INHERITANCE_ALL_FUNCTION_H
