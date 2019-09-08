@@ -126,6 +126,8 @@
     <ClCompile Include="base_struct.cpp" />
     <ClCompile Include="bear_panda.cpp" />
     <ClCompile Include="class_panda.cpp" />
+    <ClCompile Include="lippman_task_18_28.cpp" />
+    <ClCompile Include="lippman_task_18_29.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="class_MI.cpp" />
   </ItemGroup>

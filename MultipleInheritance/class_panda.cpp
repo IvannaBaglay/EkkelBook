@@ -30,7 +30,9 @@ namespace NamespacePanda {
         virtual void f3(int i) {
             std::cout << "ZooAnimal.f3()" << std::endl;
         }
-
+        void FunctionInZoo() {
+            std::cout << "ZooAnimal.FunctionInZoo()" << std::endl;
+        }
     private:
         void max_weight_with_paramets_in_private(double d, int i) {
             std::cout << "ZooAnimal.max_weight_with_paramets_in_private()" << std::endl;

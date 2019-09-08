@@ -30,6 +30,12 @@
     <ClCompile Include="class_panda.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lippman_task_18_28.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lippman_task_18_29.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all_function.h">
