@@ -5,5 +5,6 @@
 #include <memory>
 
 void UseSharedPtr();
+void UseUniqurPtr();
 
 #endif //SMART_POINTERS_ALL_FUNCTION_H_

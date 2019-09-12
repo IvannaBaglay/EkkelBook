@@ -2,7 +2,7 @@
 
 int main() {
 
-    UseSharedPtr();
+    UseUniqurPtr();
 
     return 0;
 }
