@@ -24,9 +24,21 @@
     <ClCompile Include="unique_ptr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StrBlob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StrBlobPtr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StrBlob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StrBlobPtr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

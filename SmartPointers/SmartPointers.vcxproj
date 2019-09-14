@@ -125,10 +125,14 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="shared_ptr.cpp" />
+    <ClCompile Include="StrBlob.cpp" />
+    <ClCompile Include="StrBlobPtr.cpp" />
     <ClCompile Include="unique_ptr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all_function.h" />
+    <ClInclude Include="StrBlob.h" />
+    <ClInclude Include="StrBlobPtr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
