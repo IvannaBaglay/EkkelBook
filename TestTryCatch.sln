@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TryCatch", "TruCatch\TruCat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SmartPointers", "SmartPointers\SmartPointers.vcxproj", "{3707BC56-796D-4E5E-9369-756ED40B358B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task1", "task1\task1.vcxproj", "{4780C22D-BC99-4E9C-AB23-0EAB8922A800}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{3707BC56-796D-4E5E-9369-756ED40B358B}.Release|x64.Build.0 = Release|x64
 		{3707BC56-796D-4E5E-9369-756ED40B358B}.Release|x86.ActiveCfg = Release|Win32
 		{3707BC56-796D-4E5E-9369-756ED40B358B}.Release|x86.Build.0 = Release|Win32
+		{4780C22D-BC99-4E9C-AB23-0EAB8922A800}.Debug|x64.ActiveCfg = Debug|x64
+		{4780C22D-BC99-4E9C-AB23-0EAB8922A800}.Debug|x64.Build.0 = Debug|x64
+		{4780C22D-BC99-4E9C-AB23-0EAB8922A800}.Debug|x86.ActiveCfg = Debug|Win32
+		{4780C22D-BC99-4E9C-AB23-0EAB8922A800}.Debug|x86.Build.0 = Debug|Win32
+		{4780C22D-BC99-4E9C-AB23-0EAB8922A800}.Release|x64.ActiveCfg = Release|x64
+		{4780C22D-BC99-4E9C-AB23-0EAB8922A800}.Release|x64.Build.0 = Release|x64
+		{4780C22D-BC99-4E9C-AB23-0EAB8922A800}.Release|x86.ActiveCfg = Release|Win32
+		{4780C22D-BC99-4E9C-AB23-0EAB8922A800}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
