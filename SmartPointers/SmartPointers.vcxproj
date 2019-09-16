@@ -128,6 +128,7 @@
     <ClCompile Include="StrBlob.cpp" />
     <ClCompile Include="StrBlobPtr.cpp" />
     <ClCompile Include="unique_ptr.cpp" />
+    <ClCompile Include="weak_ptr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all_function.h" />
