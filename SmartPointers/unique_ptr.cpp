@@ -3,12 +3,35 @@
 #include <fstream>
 
 #include "StrBlob.h"
+#include "StrBlobPtr.h"
+
+template<typename T>
+using UniquePointerSet = std::set<std::unique_ptr<T>, ComparePointer>;
+
 
 namespace {
+
+    struct ComparePointer
+    {
+        template<typename T>
+        bool operator() (std::unique_ptr<T> const& up1, std::unique_ptr<T> const& up2) {
+            return *up1 < *up2;
+        }
     
+    };
+
+    class Base {
+
+    };
+    class Derived : public Base {
+
+    };
+
 }
 
 void UseUniqurPtr() {
+
+
 
     std::unique_ptr<int> p(new int(5));
 
@@ -37,7 +60,7 @@ void UseUniqurPtr() {
     //IntP p5(p2.get());
 
     //12.20
-    /*{
+    {
         std::cout << "Input the file name: ";
         std::string filename;
         std::cin >> filename;
@@ -54,6 +77,12 @@ void UseUniqurPtr() {
         // The following loop cannot be compiled, because we don't define the `!=`
         // operator for `StrBlobPtr`
         //for (StrBlobPtr p = texts.begin(); p != texts.end(); p.inc())
-    }*/
+    }
 
+    UniquePointerSet<Base> source;
+    source.insert(std::make_unique<Derived>());
+
+    UniquePointerSet<Base> destination;
+
+    destination.merge(source);
 }
