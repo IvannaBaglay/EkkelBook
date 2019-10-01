@@ -4,4 +4,6 @@
 #include <iostream>
 #include <algorithm>
 
+int function_equal();
+
 #endif // _ALGORITHM_ALL_FUNCTION_H

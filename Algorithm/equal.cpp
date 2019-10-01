@@ -1,7 +1,6 @@
 #include "all_function.h"
 
-int main() {
+int function_equal() {
 
-    function_equal();
     return 0;
 }
