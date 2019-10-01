@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task1", "task1\task1.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PImpl_Idiom", "PImpl_Idiom\PImpl_Idiom.vcxproj", "{08E5E050-2C29-41EE-B29F-C4A3914CA5AC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutoDecltype", "AutoDecltype\AutoDecltype.vcxproj", "{21CC05C6-9CC5-4C38-84D0-B24AF55452FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{08E5E050-2C29-41EE-B29F-C4A3914CA5AC}.Release|x64.Build.0 = Release|x64
 		{08E5E050-2C29-41EE-B29F-C4A3914CA5AC}.Release|x86.ActiveCfg = Release|Win32
 		{08E5E050-2C29-41EE-B29F-C4A3914CA5AC}.Release|x86.Build.0 = Release|Win32
+		{21CC05C6-9CC5-4C38-84D0-B24AF55452FD}.Debug|x64.ActiveCfg = Debug|x64
+		{21CC05C6-9CC5-4C38-84D0-B24AF55452FD}.Debug|x64.Build.0 = Debug|x64
+		{21CC05C6-9CC5-4C38-84D0-B24AF55452FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{21CC05C6-9CC5-4C38-84D0-B24AF55452FD}.Debug|x86.Build.0 = Debug|Win32
+		{21CC05C6-9CC5-4C38-84D0-B24AF55452FD}.Release|x64.ActiveCfg = Release|x64
+		{21CC05C6-9CC5-4C38-84D0-B24AF55452FD}.Release|x64.Build.0 = Release|x64
+		{21CC05C6-9CC5-4C38-84D0-B24AF55452FD}.Release|x86.ActiveCfg = Release|Win32
+		{21CC05C6-9CC5-4C38-84D0-B24AF55452FD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
