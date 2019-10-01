@@ -2,5 +2,6 @@
 
 int main() {
 
+    function_count();
     return 0;
 }
