@@ -2,5 +2,6 @@
 
 int main() {
 
+    function_find();
     return 0;
 }
