@@ -35,10 +35,10 @@ int main()
     decltype(i) ri14; // int
     decltype((i)) ri15 = i; // int&
 
-    int i = 100, sum = 0;
+    int i1 = 100, sum = 0;
     for (int i = 0; i != 10; ++i)
         sum += i;
-    std::cout << i << " " << sum << std::endl;  // 100 45
+    std::cout << i1 << " " << sum << std::endl;  // 100 45
 
     return 0;
 }

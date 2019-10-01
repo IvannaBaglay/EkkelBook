@@ -43,8 +43,8 @@ int task2() {
     std::cout << x[0]->f() << x[1]->f() << i->f() << (i + 1)->f() << std::endl;
 
     typedef std::vector<const A*> V2;
-    V2 y({ &a, &b });
-    V2::const_iterator i2 = y.begin();
+    V2 y1({ &a, &b });
+    V2::const_iterator i2 = y1.begin();
 
     std::cout <<  (*i2)->f() << (*(i2 + 1))->f() << std::endl;
 
