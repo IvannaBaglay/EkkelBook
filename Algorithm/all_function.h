@@ -11,4 +11,6 @@ int function_find();
 
 int function_count();
 
+int function_back_inserter();
+
 #endif // _ALGORITHM_ALL_FUNCTION_H
