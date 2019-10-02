@@ -6,4 +6,6 @@
 
 int function_find();
 
+int function_count();
+
 #endif // _ALGORITHM_ALL_FUNCTION_H

@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="count.cpp" />
     <ClCompile Include="find.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
