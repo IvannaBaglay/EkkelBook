@@ -3,6 +3,9 @@
 
 #include <iostream>
 #include <algorithm>
+#include <numeric>
+
+int function_accumulate();
 
 int function_find();
 
