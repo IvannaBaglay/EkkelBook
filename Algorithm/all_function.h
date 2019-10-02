@@ -15,4 +15,6 @@ int function_back_inserter();
 
 int function_copy();
 
+int function_equal();
+
 #endif // _ALGORITHM_ALL_FUNCTION_H

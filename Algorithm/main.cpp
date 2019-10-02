@@ -8,5 +8,6 @@ int main() {
     function_find();
     function_count();
     function_copy();
+    function_equal();
     return 0;
 }
