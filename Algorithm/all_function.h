@@ -17,4 +17,6 @@ int function_copy();
 
 int function_equal();
 
+int function_fill();
+
 #endif // _ALGORITHM_ALL_FUNCTION_H

@@ -1,6 +1,7 @@
 #include "all_function.h"
 
 int main() {
+    function_fill();
 
     function_back_inserter();
 
