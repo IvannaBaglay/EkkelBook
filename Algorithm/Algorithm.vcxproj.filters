@@ -18,7 +18,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="fill.cpp">
+    <ClCompile Include="equal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="copy.cpp">
@@ -34,9 +34,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="find.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="equal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
