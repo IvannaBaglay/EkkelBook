@@ -4,4 +4,6 @@
 #include <iostream>
 #include <algorithm>
 
+int function_back_inserter();
+
 #endif // _ALGORITHM_ALL_FUNCTION_H
