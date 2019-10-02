@@ -7,5 +7,6 @@ int main() {
     function_accumulate();
     function_find();
     function_count();
+    function_copy();
     return 0;
 }

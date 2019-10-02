@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="copy.cpp" />
     <ClCompile Include="back_inserter.cpp" />
     <ClCompile Include="accumulate.cpp" />
     <ClCompile Include="count.cpp" />
