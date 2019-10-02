@@ -5,6 +5,8 @@
 #include <algorithm>
 #include <numeric>
 
+int function_sort();
+
 int function_accumulate();
 
 int function_find();
