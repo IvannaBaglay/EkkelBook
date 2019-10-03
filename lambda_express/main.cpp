@@ -3,6 +3,9 @@
 int main() {
 
     //LambdaCapturesByReference();
+    //LambdaMutable();
+    LambdaTransform();
+    //LambdaCapturesByReference();
     ImplicitlyLambdaCapture();
 
     return 0;
