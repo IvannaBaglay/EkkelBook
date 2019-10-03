@@ -25,3 +25,22 @@ int LambdaMutable() {
     }
     return 0;
 }
+
+int LambdaTransform() {
+
+    std::vector<int> vi{ 1, -1, -2,2 };
+    transform(vi.begin(), vi.end(), vi.begin(), [](int i) {return i < 0 ? -i : i; });
+
+    vi = { 1, -1, -2,2 };
+    transform(vi.begin(), vi.end(), vi.begin(), [](int i) 
+        {
+            if (i < 0) return -i; else return i;
+        });
+    vi = { 1, -1, -2,2 };
+    transform(vi.begin(), vi.end(), vi.begin(), [](int i) -> int
+        {
+            if (i < 0) return -i; else return i;
+        });
+
+    return 0;
+}

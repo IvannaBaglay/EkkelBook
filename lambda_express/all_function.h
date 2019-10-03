@@ -6,5 +6,6 @@
 
 int LambdaCapturesByReference();
 int LambdaMutable();
+int LambdaTransform();
 
 #endif // LAMBDA_EXPRESS_ALL_FUNCTION_H_

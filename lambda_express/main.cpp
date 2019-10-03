@@ -3,7 +3,8 @@
 int main() {
 
     //LambdaCapturesByReference();
-    LambdaMutable();
+    //LambdaMutable();
+    LambdaTransform();
 
     return 0;
 }
