@@ -1,4 +1,5 @@
 #include <vector>
+#include <list>
 
 #include "all_function.h"
 
@@ -22,6 +23,15 @@ int function_back_inserter() {
     for (std::vector<int>::iterator it = foo.begin(); it != foo.end(); ++it)
         std::cout << ' ' << *it;
     std::cout << '\n';
+
+    {
+
+        std::vector<int> vec; std::list<int> lst; int i;
+        for (int i = 1; i <= 5; i++)
+            lst.push_back(i);
+        std::copy(lst.cbegin(), lst.cend(), back_inserter(vec));
+    }
+   
 
     return 0;
 }

@@ -27,5 +27,12 @@ int function_fill() {
         std::cout << '\n';
     }
 
+    {
+        /*The operation reserve sets the capacity, NOT the size, of vec to 10. We
+would have to declare vec as a vector with size 10:*/
+        std::vector<int> vec(10);
+        std::fill_n(vec.begin(), 10, 0);
+    }
+
     return 0;
 }
