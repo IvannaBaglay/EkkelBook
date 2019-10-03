@@ -4,6 +4,7 @@ int main() {
     //function_sort();
     //function_fill();
     function_back_inserter();
+    function_find();
     //function_accumulate();
     //function_find();
     //function_count();

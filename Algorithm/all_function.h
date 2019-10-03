@@ -21,4 +21,6 @@ int function_equal();
 
 int function_fill();
 
+int function_stable_sort();
+
 #endif // _ALGORITHM_ALL_FUNCTION_H

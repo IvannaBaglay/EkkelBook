@@ -1,5 +1,6 @@
 #include "all_function.h"
 #include <vector>
+#include <string>
 
 int function_find() {
     
@@ -22,6 +23,20 @@ int function_find() {
         std::cout << "Element found in myvector: " << *it << '\n';
     else
         std::cout << "Element not found in myvector\n";
+
+    {
+        std::vector<std::string> words;
+        words.push_back("a");
+        words.push_back("aa");
+        words.push_back("aaa");
+        int sz = 1;
+        auto wc = find_if(words.begin(), words.end(), [sz](const std::string& a)
+            {return a.size() >= sz; });
+        for_each(wc, words.end(),
+            [](const std::string& s) {std::cout << s << " "; });
+
+
+    }
 
     return 0;
 }
