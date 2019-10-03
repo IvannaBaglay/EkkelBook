@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutoDecltype", "AutoDecltyp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithm", "Algorithm\Algorithm.vcxproj", "{715D112F-0230-4F1A-A67B-1B3F862E87E0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LambdaExpress", "lambda_express\lambda_express.vcxproj", "{45E72291-A88F-42B5-9904-222D5394709C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{715D112F-0230-4F1A-A67B-1B3F862E87E0}.Release|x64.Build.0 = Release|x64
 		{715D112F-0230-4F1A-A67B-1B3F862E87E0}.Release|x86.ActiveCfg = Release|Win32
 		{715D112F-0230-4F1A-A67B-1B3F862E87E0}.Release|x86.Build.0 = Release|Win32
+		{45E72291-A88F-42B5-9904-222D5394709C}.Debug|x64.ActiveCfg = Debug|x64
+		{45E72291-A88F-42B5-9904-222D5394709C}.Debug|x64.Build.0 = Debug|x64
+		{45E72291-A88F-42B5-9904-222D5394709C}.Debug|x86.ActiveCfg = Debug|Win32
+		{45E72291-A88F-42B5-9904-222D5394709C}.Debug|x86.Build.0 = Debug|Win32
+		{45E72291-A88F-42B5-9904-222D5394709C}.Release|x64.ActiveCfg = Release|x64
+		{45E72291-A88F-42B5-9904-222D5394709C}.Release|x64.Build.0 = Release|x64
+		{45E72291-A88F-42B5-9904-222D5394709C}.Release|x86.ActiveCfg = Release|Win32
+		{45E72291-A88F-42B5-9904-222D5394709C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
