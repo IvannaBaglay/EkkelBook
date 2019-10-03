@@ -1,3 +1,8 @@
 #ifndef _ASSOCIATE_CONTAINER_ALL_FUNCTION_H_
 #define _ASSOCIATE_CONTAINER_ALL_FUNCTION_H_
+
+#include <iostream>
+
+int map();
+
 #endif // _ASSOCIATE_CONTAINER_ALL_FUNCTION_H_

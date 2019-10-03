@@ -2,5 +2,7 @@
 
 int main() {
 
+    map();
+
     return 0;
 }
