@@ -2,7 +2,8 @@
 
 int main() {
 
-    LambdaCapturesByReference();
+    //LambdaCapturesByReference();
+    LambdaMutable();
 
     return 0;
 }

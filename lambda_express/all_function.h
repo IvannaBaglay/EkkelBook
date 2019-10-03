@@ -5,5 +5,6 @@
 #include <iostream>
 
 int LambdaCapturesByReference();
+int LambdaMutable();
 
 #endif // LAMBDA_EXPRESS_ALL_FUNCTION_H_

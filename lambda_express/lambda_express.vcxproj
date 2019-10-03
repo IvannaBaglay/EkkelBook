@@ -124,6 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Algorithm\lambda_mutable.cpp" />
     <ClCompile Include="lambda_captures_reference.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
