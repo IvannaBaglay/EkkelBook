@@ -3,6 +3,8 @@
 int main() {
 
     //LambdaCapturesByReference();
+    function_bind();
+    //LambdaCapturesByReference();
     //LambdaMutable();
     LambdaTransform();
     //LambdaCapturesByReference();

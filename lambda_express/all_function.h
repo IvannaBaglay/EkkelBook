@@ -5,6 +5,7 @@
 #include <iostream>
 
 int LambdaCapturesByReference();
+int function_bind();
 int LambdaMutable();
 int LambdaTransform();
 int ImplicitlyLambdaCapture();

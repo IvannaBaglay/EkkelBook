@@ -21,6 +21,9 @@
     <ClCompile Include="lambda_captures_reference.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="bind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\Algorithm\lambda_mutable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
