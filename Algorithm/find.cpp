@@ -29,9 +29,12 @@ int function_find() {
         words.push_back("a");
         words.push_back("aa");
         words.push_back("aaa");
-        int sz = 2;
+        int sz = 1;
         auto wc = find_if(words.begin(), words.end(), [sz](const std::string& a)
             {return a.size() >= sz; });
+        for_each(wc, words.end(),
+            [](const std::string& s) {std::cout << s << " "; });
+
 
     }
 
