@@ -2,7 +2,8 @@
 
 int main() {
 
-    LambdaCapturesByReference();
+    //LambdaCapturesByReference();
+    int ImplicitlyLambdaCapture();
 
     return 0;
 }

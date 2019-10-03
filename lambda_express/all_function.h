@@ -5,5 +5,6 @@
 #include <iostream>
 
 int LambdaCapturesByReference();
+int ImplicitlyLambdaCapture();
 
 #endif // LAMBDA_EXPRESS_ALL_FUNCTION_H_

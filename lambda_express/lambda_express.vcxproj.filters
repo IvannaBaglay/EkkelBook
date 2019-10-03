@@ -21,6 +21,9 @@
     <ClCompile Include="lambda_captures_reference.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lambda_capture_implicitly.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all_function.h">
