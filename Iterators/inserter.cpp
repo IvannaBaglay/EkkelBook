@@ -20,6 +20,24 @@ int inserter() {
     copy(lst.begin(), lst.end(), inserter(lst3, lst3.begin()));
 
     {
+        std::list<int> foo, bar;
+        for (int i = 1; i <= 5; i++)
+        {
+            foo.push_back(i); bar.push_back(i * 10);
+        }
+
+        std::list<int>::iterator it = foo.begin();
+        advance(it, 3); // move iterator on 4 element foo[3]
+
+        std::copy(bar.begin(), bar.end(), std::inserter(foo, it));
+
+        std::cout << "foo contains:";
+        for (std::list<int>::iterator it = foo.begin(); it != foo.end(); ++it)
+            std::cout << ' ' << *it;
+        std::cout << '\n';
+    }
+
+    {
         std::vector<int> source{ 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         std::vector<int> ivec;
         std::deque<int> ideq;

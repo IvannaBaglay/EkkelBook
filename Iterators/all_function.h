@@ -3,4 +3,7 @@
 
 #include <iostream>
 
+int inserter();
+int function_unique();
+
 #endif // ITERATORS_ALL_FUNCTION_H_

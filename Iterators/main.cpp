@@ -2,5 +2,7 @@
 
 int main() {
 
+    //inserter();
+    function_unique();
     return 0;
 }
