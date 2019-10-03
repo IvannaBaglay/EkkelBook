@@ -1,5 +1,7 @@
 #include <vector>
 #include <string>
+#include <list>
+#include <iterator>
 
 #include "all_function.h"
 
@@ -41,6 +43,70 @@ int LambdaTransform() {
         {
             if (i < 0) return -i; else return i;
         });
+
+    {
+        typedef std::list<int> L;
+        L l(5);
+        typedef L::const_iterator CI;
+        CI cb = l.begin(), ce = l.end();
+        typedef L::iterator I;
+        I b = l.begin();
+        std::transform(cb, --ce, ++b, [](CI::value_type n) {return ++n; });
+        /*template <class InputIterator, class OutputIterator, class UnaryOperator>
+      OutputIterator transform (InputIterator first1, InputIterator last1,
+                                OutputIterator result, UnaryOperator op)
+    {
+      while (first1 != last1) {
+        *result = op(*first1);  // or: *result=binary_op(*first1,*first2++);
+        ++result; ++first1;
+      }
+      return result;
+    }*/
+        std::copy(l.begin(), l.end(), std::ostream_iterator < CI::value_type >(std::cout));
+        std::cout << std::endl;
+    }
+    {
+        typedef std::list<int> L;
+        L l(5);
+        typedef L::const_iterator CI;
+        CI cb = l.begin(), ce = l.end();
+        typedef L::iterator I;
+        I b = l.begin();
+        std::transform(cb, --ce, b, [](CI::value_type n) {return ++n; });
+        /*template <class InputIterator, class OutputIterator, class UnaryOperator>
+      OutputIterator transform (InputIterator first1, InputIterator last1,
+                                OutputIterator result, UnaryOperator op)
+    {
+      while (first1 != last1) {
+        *result = op(*first1);  // or: *result=binary_op(*first1,*first2++);
+        ++result; ++first1;
+      }
+      return result;
+    }*/
+        std::copy(l.begin(), l.end(), std::ostream_iterator < CI::value_type >(std::cout));
+        std::cout << std::endl;
+    }
+    {
+        typedef std::list<int> L;
+        L l(5);
+        typedef L::const_iterator CI;
+        CI cb = l.begin(), ce = l.end();
+        typedef L::iterator I;
+        I b = l.begin();
+        std::transform(cb, ce, b, [](CI::value_type n) {return ++n; });
+        /*template <class InputIterator, class OutputIterator, class UnaryOperator>
+      OutputIterator transform (InputIterator first1, InputIterator last1,
+                                OutputIterator result, UnaryOperator op)
+    {
+      while (first1 != last1) {
+        *result = op(*first1);  // or: *result=binary_op(*first1,*first2++);
+        ++result; ++first1;
+      }
+      return result;
+    }*/
+        std::copy(l.begin(), l.end(), std::ostream_iterator < CI::value_type >(std::cout));
+        std::cout << std::endl;
+    }
 
     return 0;
 }
