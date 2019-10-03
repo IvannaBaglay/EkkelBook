@@ -3,7 +3,7 @@
 int main() {
 
     //LambdaCapturesByReference();
-    int ImplicitlyLambdaCapture();
+    ImplicitlyLambdaCapture();
 
     return 0;
 }
