@@ -131,6 +131,7 @@
     <ClCompile Include="count.cpp" />
     <ClCompile Include="find.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="stable_sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all_function.h" />
