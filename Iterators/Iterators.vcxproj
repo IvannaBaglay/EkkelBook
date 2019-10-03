@@ -126,6 +126,7 @@
     <ClInclude Include="all_function.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="inserter.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
