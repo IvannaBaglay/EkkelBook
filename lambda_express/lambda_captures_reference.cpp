@@ -3,7 +3,7 @@
 
 #include "all_function.h"
 
-int LambdaCapturesReference() {
+int LambdaCapturesByReference() {
 
     {
         size_t v1 = 42;

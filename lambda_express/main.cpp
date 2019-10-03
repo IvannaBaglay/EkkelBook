@@ -2,7 +2,7 @@
 
 int main() {
 
-    LambdaCapturesReference();
+    LambdaCapturesByReference();
 
     return 0;
 }

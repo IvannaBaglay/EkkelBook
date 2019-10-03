@@ -4,6 +4,6 @@
 #include <algorithm>
 #include <iostream>
 
-int LambdaCapturesReference();
+int LambdaCapturesByReference();
 
 #endif // LAMBDA_EXPRESS_ALL_FUNCTION_H_
