@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="set.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all_function.h" />

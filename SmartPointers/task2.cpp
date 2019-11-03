@@ -30,6 +30,14 @@ namespace {
 
         int f() const override { return m_n + 1; }
     };
+    class C : public A {
+    public:
+        C(int n = 0) : A(n) {
+
+        }
+
+        int f() const override { return m_n + 1; }
+    };
 }
 
 int task2() {
@@ -45,8 +53,13 @@ int task2() {
     typedef std::vector<const A*> V2;
     V2 y1({ &a, &b });
     V2::const_iterator i2 = y1.begin();
-
     std::cout <<  (*i2)->f() << (*(i2 + 1))->f() << std::endl;
+    
+    std::vector<A*> y2;
+    y2.push_back(new B(1));
+    y2.push_back(new C(2));
+    std::vector<A*>::iterator i3 = y2.begin();
+    std::cout << (*i3)->f() << (*(i3 + 1))->f() << std::endl;
 
     return 0;
 }

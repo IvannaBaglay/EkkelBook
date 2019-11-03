@@ -147,7 +147,7 @@ namespace NamespacePanda {
         virtual void cuddle() {
             std::cout << "Panda.cuddle()" << std::endl;
         }
-        /* void get_max_weight() {
+         void get_max_weight() {
              std::cout << "Panda.max_weight()" << std::endl;
          }
          void max_weight_with_paramets(std::string i) {
@@ -155,7 +155,7 @@ namespace NamespacePanda {
          }
          void max_weight_with_paramets_in_private(double d, int i) {
              std::cout << "Panda.max_weight_with_paramets_in_private()" << std::endl;
-         }*/
+         }
         virtual void f3(std::string i) //override be error 
         {
             std::cout << "Panda.f3()" << std::endl;

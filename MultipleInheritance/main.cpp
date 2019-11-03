@@ -1,6 +1,8 @@
 #include "all_function.h"
 
 int main() {
-    CallClass();
+    CreatePanda();
+    //CreateD();
+    //CallClass();
     return 0;
 }
